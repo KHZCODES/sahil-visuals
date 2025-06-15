@@ -13,7 +13,12 @@ export default defineConfig({
   build: {
     target: 'es2015',
     minify: 'esbuild',
-    sourcemap: false
+    sourcemap: false,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
   },
   server: {
     headers: {
