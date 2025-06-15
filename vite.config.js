@@ -14,14 +14,9 @@ export default defineConfig({
     target: 'es2015',
     minify: 'esbuild',
     sourcemap: false,
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom', 'react-router-dom'],
-          animations: ['framer-motion'],
-        },
-      },
-    },
+    commonjsOptions: {
+      include: []
+    }
   },
   server: {
     headers: {
