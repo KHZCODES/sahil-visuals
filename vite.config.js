@@ -13,10 +13,7 @@ export default defineConfig({
   build: {
     target: 'es2015',
     minify: 'esbuild',
-    sourcemap: false,
-    commonjsOptions: {
-      include: []
-    }
+    sourcemap: false
   },
   server: {
     headers: {
